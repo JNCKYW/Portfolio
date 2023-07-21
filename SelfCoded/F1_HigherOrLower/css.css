@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(156, 156, 156, 0.103),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(img/Background.jpg);
+  height: 100vh;
+  padding-top: 2rem;
+  background-position: bottom;
+  font-family: "Orbitron", sans-serif;
+  color: rgb(230, 230, 230);
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+/* ################################# */
+/* HEADER CSS */
+/* ################################# */
+
+.header {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.103),
+    rgba(197, 197, 197, 0.103)
+  );
+  backdrop-filter: blur(8px);
+  height: 10vh;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.308);
+}
+
+h1 {
+  margin-bottom: 0.4rem;
+  font-size: 3.6rem;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.higher {
+  font-weight: inherit;
+  color: rgb(61, 204, 32);
+}
+
+.lower {
+  font-weight: inherit;
+  color: rgb(255, 44, 44);
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+}
+
+/* ################################# */
+/* BUTTONS SECTION */
+/* ################################# */
+
+.btns-section {
+  padding: 4rem 4rem;
+  text-align: center;
+  width: 28%;
+  box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.301);
+}
+
+.description {
+  font-size: 2.2rem;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.driver-1--name,
+.driver-2--name {
+  font-weight: inherit;
+}
+
+.start-restart-btns {
+  margin-bottom: 4rem;
+}
+
+.btn {
+  border: none;
+  padding: 1.2rem 2.4rem;
+  background-color: rgba(209, 209, 209, 0.404);
+  border-radius: 8px;
+  color: rgb(230, 228, 228);
+  font-family: inherit;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.253);
+
+  transition: all 0.12s;
+}
+
+.btn:hover {
+  background-color: rgba(170, 170, 170, 0.404);
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translate(0, 4%);
+}
+
+.points-box {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  margin-bottom: 5rem;
+}
+
+.points-box span {
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+}
+
+.rounds-counter,
+.score {
+  display: block;
+  margin-top: 1rem;
+}
+
+.btns-hel-box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  transform: translate(50%, 0);
+}
+
+.btn--higher {
+  margin-bottom: 4rem;
+}
+
+.btn--higher:hover {
+  box-shadow: 0px 0px 12px 8px rgba(36, 196, 4, 0.26);
+  transform: translate(0, -6%);
+  background-color: rgba(209, 209, 209, 0.404);
+}
+
+.btn--lower {
+  margin-bottom: 8rem;
+}
+
+.btn--lower:hover {
+  box-shadow: 0px 0px 12px 8px rgba(255, 44, 44, 0.253);
+  transform: translate(0, 6%);
+  background-color: rgba(209, 209, 209, 0.404);
+}
+
+.btn--even {
+  margin-bottom: 4rem;
+}
+
+.btn--lower:active {
+  transform: translate(0, 10%);
+}
+
+.btn--higher:active {
+  transform: translate(0, -2%);
+}
+
+/* ################################# */
+/* DRIVER CARDS */
+/* ################################# */
+
+.blur-filter {
+  background-image: linear-gradient(
+    rgba(255, 250, 250, 0.151),
+    rgba(121, 121, 121, 0.144)
+  );
+  backdrop-filter: blur(8px);
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+}
+
+.driver-card {
+  width: 32%;
+  text-align: center;
+  padding: 3rem 2rem;
+  box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.39);
+  transition: all 0.2s;
+}
+
+.driver-img {
+  height: 84%;
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.301);
+}
+
+.driver-name {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.driver-wins,
+.driver-wins span {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  letter-spacing: 1.4px;
+}
+
+/* ################################# */
+/* JavaScript DOM classes */
+/* ################################# */
+
+.hidden {
+  display: none;
+}
+
+.box-shadow-win {
+  box-shadow: 0 0 20px 20px rgba(36, 196, 4, 0.411);
+}
+
+.box-shadow-wrong {
+  box-shadow: 0 0 20px 20px rgba(255, 44, 44, 0.61);
+}

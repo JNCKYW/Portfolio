@@ -1,0 +1,31 @@
+1 - vettel - 53
+2 - max verstappen - 37
+3 - senna - 41
+4 - prost - 51
+5 - mansell - 31
+6 - fangio - 24
+7 - hunt - 10
+8 - lauda - 25
+9 - alonso - 32
+10 - leclerc - 5
+11 - perez - 6
+12 - bottas - 10
+13 - hamilton - 103
+14 - raikkonen - 21
+15 - hakkinen - 20
+16 - schumacher - 91
+17 - gasly - 1
+18 - Jim Clark - 25
+19 - Jackie Stewart - 27
+20 - massa - 11
+21 - Button - 15
+22 - Rosberg - 23
+23 - Riccardo - 8
+24 - villneve - 11
+25 - Piquet - 23
+26 - Fittipaldi - 14
+27 - Damon Hill - 22
+28 - Andretti - 12
+29 - Barichello - 11
+30 - Webber - 9
+

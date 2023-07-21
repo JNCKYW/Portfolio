@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 &mdash; HIGHER OR LOWER</title>
+    <link rel="icon" href="img/F1logo.png" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>
+          F1 DRIVERS <span class="higher">HIGHER</span> OR
+          <span class="lower">LOWER</span>
+        </h1>
+        <h2>🏆 CAREER WINS 🏆</h2>
+      </header>
+      <main class="main">
+        <section class="blur-filter driver-card hidden" id="driver-1">
+          <img
+            class="driver-img"
+            id="driver1-img"
+            src="img/driver-10.jpg"
+            alt="F1 driver number 1"
+          />
+          <p class="driver-name" id="driver1-name">CHARLES LECLERC</p>
+          <p class="driver-wins">
+            Career wins - <span id="driver1-wins"> ?</span>
+          </p>
+        </section>
+        <section class="blur-filter btns-section">
+          <p class="description hidden">
+            Does <span class="driver-1--name">Charles Leclerc</span> have more
+            wins in his career than
+            <span class="driver-2--name">Sergio Perez</span>?
+          </p>
+          <div class="start-restart-btns">
+            <button class="btn" id="btn--ng">New Game</button>
+            <button class="btn hidden" id="btn--res">Restart</button>
+          </div>
+          <div class="points-box hidden">
+            <p class="points">
+              <span>Points</span> <span class="score">0</span>
+            </p>
+            <p class="rounds-box">
+              <span>Rounds</span> <span class="rounds-counter">0</span>
+            </p>
+          </div>
+          <div class="btns-hel-box hidden">
+            <button class="btn btn--higher">HIGHER</button>
+            <button class="btn btn--even">EVEN</button>
+            <button class="btn btn--lower">LOWER</button>
+          </div>
+          <button class="btn hidden" id="btn--new-pair">New Pair</button>
+        </section>
+        <section class="blur-filter driver-card hidden" id="driver-2">
+          <img
+            class="driver-img"
+            id="driver2-img"
+            src="img/driver-11.jpg"
+            alt="F1 driver number 2"
+          />
+          <p class="driver-2--name driver-name" id="driver2-name">
+            SERGIO PEREZ
+          </p>
+          <p class="driver-wins" id="driver-wins">
+            Career wins - <span id="driver2-wins"> ?</span>
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
