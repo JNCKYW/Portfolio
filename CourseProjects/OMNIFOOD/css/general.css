@@ -1,0 +1,116 @@
+/* 
+
+--- 01 COLORS
+
+Main color: #e67e22
+Tints: #fdf2e9
+Shades: #b8651b #cf711f
+Accents: 
+Grays: 
+#444 
+#333 
+#6f6f6f - gray on light #fdf2e9
+
+--- 02 SHADOWS
+
+
+
+--- 03 BORDER-RADIUS
+
+default: 8px
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* *:focus {
+  outline: 2px solid black;
+} */
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #444;
+}
+
+/* ************************************ */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.grid--align-center {
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid--4-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid--5-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+h2 {
+  font-size: 4.4rem;
+  line-height: 1.05;
+  margin-bottom: 9.6rem;
+}
+
+strong {
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
