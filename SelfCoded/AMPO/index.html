@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMPO &mdash; Producent poduszek na meble ogrodowe</title>
+    <link rel="icon" href="img/logo-zakladka.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+    <script defer src="js.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header sticky">
+      <div class="hdr-img-box">
+        <a href="#">
+          <img
+            class="logo-img"
+            src="img/logo-zakladka.png"
+            alt="logo firmy AMPO"
+          />
+          <img
+            class="logo-text"
+            src="img/logo-ampo.png"
+            alt="logo firmy AMPO"
+          />
+        </a>
+      </div>
+      <nav class="hdr-nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#o-nas">O nas</a></li>
+          <li><a class="nav-link" href="#prdkt">Produkty</a></li>
+          <li><a class="nav-link" href="#cta">Kontakt</a></li>
+          <li>
+            <a
+              class="nav-link nav-btn"
+              href="http://sklep.ampo.pl/"
+              target="_blank"
+              >Sklep</a
+            >
+          </li>
+        </ul>
+        <div class="lang-box">
+          <a class="lang-link" href="https://www.ampo.pl/" target="_self">
+            <img src="img/PL.png" alt="Flaga Polska" />
+          </a>
+          <a
+            class="lang-link"
+            href="https://www.ampo.pl/deutsch/uber-uns"
+            target="_self"
+          >
+            <img src="img/GER.png" alt="Flaga Niemcy" />
+          </a>
+          <a
+            class="lang-link"
+            href="https://www.ampo.pl/english/about-us"
+            target="_self"
+          >
+            <img src="img/UK.png" alt="Flaga Wielka Brytania" />
+          </a>
+        </div>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-box">
+          <img class="hero-logo" src="img/logo.png" alt="AMPO LOGO" />
+          <h1>
+            <span>30</span> lat na rynku <br />
+            postaw na jakość i doświadczenie
+          </h1>
+        </div>
+      </section>
+      <section class="onas-section" id="o-nas">
+        <div class="container flex-center">
+          <h2 class="onas-h2">O nas</h2>
+          <p class="onas-p">
+            Specjalizujemy się w produkcji poduszek na meble ogrodowe. Oferujemy
+            również szeroką gamę produktów do ogrodu: stelaże leżaków i huśtawek
+            w komplecie z poduchami, poduszki o standardowych kształtach na
+            typowe meble plastikowe, meble drewniane i rattanowe, pokrowce na
+            meble ogrodowe oraz akcesoria plażowe. Produkujemy również różnego
+            rodzaju poduszki do wnętrz mieszkalnych oraz poduszki w każdej innej
+            wersji na specjalne zamówienie klienta.
+          </p>
+        </div>
+      </section>
+      <section class="produkty-section" id="prdkt">
+        <h2 class="produkty-h2">Produkty</h2>
+        <div class="container grid grid--3-cols">
+          <div class="produkt">
+            <img
+              class="produkt-img"
+              src="img/dom.jpg"
+              alt="poduszki ogrodowe"
+            />
+            <a
+              class="nav-link nav-btn produkt-btn query-btn"
+              href="http://sklep.ampo.pl/category/poduszki"
+              target="_blank"
+              >Więcej</a
+            >
+            <p>Poduszki do domu</p>
+          </div>
+          <div class="produkt">
+            <img
+              class="produkt-img"
+              src="img/ogrodowe.jpg"
+              alt="poduszki ogrodowe"
+            />
+            <a
+              class="nav-link nav-btn produkt-btn query-btn"
+              href="https://sklep.ampo.pl/Poduszki-na-fotele-ogrodowe-i-tarasowe-c614"
+              target="_blank"
+              >Więcej</a
+            >
+            <p>Poduszki ogrodowe</p>
+          </div>
+          <div class="produkt">
+            <img
+              class="produkt-img"
+              src="img/szwalnia.jpg"
+              alt="poduszki ogrodowe"
+            />
+            <a
+              class="nav-link nav-btn produkt-btn query-btn"
+              href="https://sklep.ampo.pl/news/n/156/Szycie-na-wymiar"
+              target="_blank"
+              >Więcej</a
+            >
+            <p>Szycie na wymiar</p>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section">
+        <div class="container grid grid--2-cols grid--med-gap query--ftr-gap">
+          <div class="testimonial">
+            <div class="img-name-box">
+              <img class="testi-img" src="img/1.jpg" alt="zdjęcie klienta 1" />
+              <div class="name-job-box">
+                <p class="name">Michał</p>
+                <p class="job">Frontend Developer</p>
+              </div>
+            </div>
+            <div class="testi-text-box">
+              <svg
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cytat-up"
+              >
+                <path
+                  d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <blockquote class="testi-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                animi vero numquam, perferendis, aliquid velit culpa, maiores
+                incidunt dolore sed pariatur in tempore libero quo saepe
+                eligendi odit alias illo.
+              </blockquote>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="img-name-box">
+              <img class="testi-img" src="img/2.jpg" alt="zdjęcie klienta 1" />
+              <div class="name-job-box">
+                <p class="name">Agnieszka</p>
+                <p class="job">Grafik Komputerowy</p>
+              </div>
+            </div>
+            <div class="testi-text-box">
+              <svg
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cytat-up"
+              >
+                <path
+                  d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <blockquote class="testi-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Eligendi tempore quisquam sed alias mollitia dolorem rerum, eius
+                ab quo molestiae architecto dolores officiis? Necessitatibus,
+                voluptatem hic minima dignissimos maiores consectetur.
+              </blockquote>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="img-name-box">
+              <img class="testi-img" src="img/3.jpg" alt="zdjęcie klienta 1" />
+              <div class="name-job-box">
+                <p class="name">Beata</p>
+                <p class="job">Specjalistka ds. obsługi klienta</p>
+              </div>
+            </div>
+            <div class="testi-text-box">
+              <svg
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cytat-up"
+              >
+                <path
+                  d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <blockquote class="testi-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+                fugit repre dolorum voluptatum eligendi voluptas! Fugiat nulla
+                cum minima, maiores voluptatum, numquam ea, molestias optio
+                mollitia sequi labore consectetur libero.
+              </blockquote>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="img-name-box">
+              <img class="testi-img" src="img/4.jpg" alt="zdjęcie klienta 1" />
+              <div class="name-job-box">
+                <p class="name">Andrzej</p>
+                <p class="job">Specjalista ds. marketingu</p>
+              </div>
+            </div>
+            <div class="testi-text-box">
+              <svg
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cytat-up"
+              >
+                <path
+                  d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <blockquote class="testi-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Deleniti, nesciunt, est facilis consectetur voluptatibus
+                inventore vero alias suscipit eum error, laudantium fugit odit
+                ad voluptas. Voluptatibus nisi quaerat molestias ugabunga oleoe
+                vitae?
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features-section">
+        <div class="container--big grid grid--4-cols query-grid--2-cols">
+          <div class="feature">
+            <img src="img/czas.png" alt="time-ikon" />
+            <p class="feature-header">Długoletnie doświadczenie</p>
+            <p class="feature-text">
+              Ponad dwadzieścia lat na rynku w branży ogrodowej
+            </p>
+          </div>
+          <div class="feature">
+            <img src="img/material.png" alt="material-ikon" />
+            <p class="feature-header">Surowce wysokiej jakości</p>
+            <p class="feature-text">
+              Bezpośredni zakup wysokiej jakości surowców, tkanin do produkcji
+              poduszek, stelaży leżaków, huśtawek oraz wszelkiego rodzaju innych
+              mebli ogrodowych
+            </p>
+          </div>
+          <div class="feature">
+            <img src="img/masz.png" alt="maszyna-ikon" />
+            <p class="feature-header">Duże możliwości produkcyjne</p>
+            <p class="feature-text">
+              Duże możliwości produkcyjne oraz różnorodność produktów
+              dostosowane do indywidualnych potrzeb klienta
+            </p>
+          </div>
+          <div class="feature query--feature-1">
+            <img src="img/mapa.png" alt="mapa-ikon" />
+            <p class="feature-header">Produkujemy w Polsce</p>
+            <p class="feature-text">
+              Nasze produkty wykonujemy w centralnej części Polski
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cta" id="cta">
+        <div class="container">
+          <div class="cta-box">
+            <div class="form-box">
+              <h2 class="cta-h2">Skontaktuj się z nami!</h2>
+              <form class="cta-form grid grid--2-cols">
+                <div class="name">
+                  <label for="name">Imie <span>wymagane</span></label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Adela Kontroboska"
+                    required
+                  />
+                </div>
+                <div class="firma">
+                  <label for="firma">Nazwa Firmy</label>
+                  <input type="text" id="firma" placeholder="AMPO" />
+                </div>
+                <div class="e-mail">
+                  <label for="e-mail">Adres email <span>wymagane</span></label>
+                  <input
+                    type="text"
+                    id="e-mail"
+                    placeholder="Adela@poczta.pl"
+                  />
+                </div>
+                <div class="firma">
+                  <label for="telefon">Numer telefonu </label>
+                  <input type="text" id="telefon" placeholder="444-555-333" />
+                </div>
+                <div class="message">
+                  <label for="message">Wiadomość <span>wymagane</span></label>
+                  <input
+                    type="text"
+                    id="message"
+                    placeholder="wprowadź tekst wiadomości"
+                    required
+                  />
+                </div>
+                <button class="cta-btn">Wyślij</button>
+              </form>
+            </div>
+            <div class="img-box"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <div
+        class="container grid grid--4-cols grid--med-gap query--ftr-gap query-grid--2-cols"
+      >
+        <div class="logo-socials">
+          <div class="ftr-logo">
+            <a href="#">
+              <img
+                class="logo-img"
+                src="img/logo-zakladka.png"
+                alt="logo firmy AMPO"
+              />
+              <img
+                class="logo-text"
+                src="img/logo-ampo.png"
+                alt="logo firmy AMPO"
+              />
+            </a>
+          </div>
+          <div class="socials">
+            <a
+              class="socials-link"
+              target="_blank"
+              href="https://www.facebook.com/SklepAmpo/"
+            >
+              <ion-icon
+                class="ftr-social ftr-social--left"
+                name="logo-facebook"
+              ></ion-icon>
+            </a>
+            <a
+              class="socials-link"
+              target="_blank"
+              href="https://www.instagram.com/ampo_dla_domu_i_ogrodu/"
+            >
+              <ion-icon class="ftr-social" name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by AMPO, Inc. All
+            rights reserved.
+          </p>
+        </div>
+        <div class="ftr-element ftr-ampo">
+          <p class="ftr-heading">P.P.H.U. AMPO s.c.</p>
+          <p class="ftr-text">NIP 731 182 31 50</p>
+          <p class="ftr-text">ul. Leśników Polskich 65</p>
+          <p class="ftr-text">98-100 Łask</p>
+        </div>
+        <div class="ftr-element ftr-sklep">
+          <p class="ftr-heading">Sklep AMPO</p>
+          <ul class="ftr-list">
+            <li><a href="tel:504 851 016">504 851 016</a></li>
+            <li><a href="mailto:sklep@ampo.pl">sklep@ampo.pl </a></li>
+            <li>
+              <a target="_blank" href="https://sklep.ampo.pl/"
+                >Strona internetowa</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="ftr-element ftr-hurt">
+          <p class="ftr-heading">Szycie na wymair</p>
+          <ul class="ftr-list">
+            <li><a href="tel:504 851 016">504 851 016 </a></li>
+            <li><a href="mailto:nawymiar@ampo.pl">nawymiar@ampo.pl </a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://sklep.ampo.pl/news/n/156/Szycie-na-wymiar"
+                >Strona internetowa</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

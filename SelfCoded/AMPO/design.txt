@@ -1,0 +1,14 @@
+
+ 01 MAIN COLOR 
+
+#83c23b
+#f3f9eb - white-green
+#e6f3d8 - darkerwhite-green
+#5c8829 - text green30% darker
+#4F7423 - text green40% darker
+
+#f09e23 
+#fef5e9 - white-orange
+#fcecd3 - darkerwhite-orange
+#905f15 - text orange-
+

@@ -1,0 +1,95 @@
+@media (max-width: 75rem) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .produkt p {
+    font-size: 2rem;
+  }
+  .query-grid--2-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  .query--feature-1 {
+    grid-area: 1/2/2/3;
+  }
+  .query--ftr-gap {
+    gap: 4rem;
+  }
+  .produkt {
+    width: 90%;
+  }
+
+  /* MOBILE NAV */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9990909;
+  }
+
+  .nav-open .hdr-nav {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+
+    transform: translate(0, 0);
+    transition: all 0.5s;
+  }
+
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .hdr-nav {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(248, 252, 242);
+    transform: translate(0, -100%);
+    transition: all 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-list {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+  .nav-btn:link,
+  .nav-btn:visited {
+    padding: 1.4rem 2.4rem 1.4rem;
+  }
+
+  .lang-link img {
+    width: 3.6rem;
+  }
+
+  .query-btn:link,
+  .query-btn:visited {
+    font-size: 1.8rem;
+    padding: 1.2rem 1.8rem 1.2rem;
+  }
+}
+
+@media (max-width: 45rem) {
+}
