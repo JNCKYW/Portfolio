@@ -42,3 +42,64 @@ btnLearnMore.addEventListener(`click`, function (e) {
   e.preventDefault();
   section1.scrollIntoView({ behavior: `smooth` });
 });
+
+///////////////////////////////////////
+// Cookie Message
+
+const header = document.querySelector(`.header`);
+const message = document.createElement(`div`);
+
+message.classList.add(`cookie-message`);
+message.innerHTML = `We use cookies for improved functionality and analytics <button class="btn btn--close-cookie">Got it!</button>`;
+
+header.append(message);
+
+message.style.height = `${
+  Number.parseFloat(getComputedStyle(message).height) + 20
+}px`;
+message.style.backgroundColor = `#37383d`;
+message.style.width = `100vw`;
+
+document
+  .querySelector(`.btn--close-cookie`)
+  .addEventListener(`click`, function (e) {
+    message.remove();
+  });
+
+///////////////////////////////////////
+// NAV links smooth behavior + hovering animation
+
+const navBar = document.querySelector(`.nav`);
+const navLogo = document.querySelector(`.nav__logo`);
+const navLinks = document.querySelectorAll(`.nav__link`);
+const navList = document.querySelector(`.nav__links`);
+
+const opacityChanger = function (e, opacity) {
+  if (e.target.classList.contains(`nav__link`)) {
+    navLinks.forEach(function (link) {
+      if (e.target !== link) {
+        link.style.opacity = opacity;
+      }
+    });
+  }
+};
+
+navList.addEventListener(`click`, function (e) {
+  e.preventDefault();
+
+  if (
+    e.target.classList.contains(`nav__link`) &&
+    !e.target.classList.contains(`nav__link--btn`)
+  ) {
+    const section = e.target.getAttribute(`href`);
+    document.querySelector(section).scrollIntoView({ behavior: `smooth` });
+  }
+});
+
+navBar.addEventListener(`mouseover`, function (e) {
+  opacityChanger(e, `0.5`);
+});
+
+navBar.addEventListener(`mouseout`, function (e) {
+  opacityChanger(e, `1`);
+});
