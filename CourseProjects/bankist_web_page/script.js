@@ -59,6 +59,7 @@ message.style.height = `${
 }px`;
 message.style.backgroundColor = `#37383d`;
 message.style.width = `100vw`;
+message.style.transform = `translateY(-30%)`;
 
 document
   .querySelector(`.btn--close-cookie`)
