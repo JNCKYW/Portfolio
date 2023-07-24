@@ -104,3 +104,54 @@ navBar.addEventListener(`mouseover`, function (e) {
 navBar.addEventListener(`mouseout`, function (e) {
   opacityChanger(e, `1`);
 });
+
+///////////////////////////////////////
+// Tabbed component
+
+const tabContainer = document.querySelector(`.operations__tab-container`);
+const tabs = document.querySelectorAll(`.operations__tab`);
+const contentElelemnts = document.querySelectorAll(`.operations__content`);
+
+tabContainer.addEventListener(`click`, function (e) {
+  e.preventDefault();
+  const tab = e.target.closest(`.btn`);
+
+  if (tab !== null && tab.classList.contains(`btn`)) {
+    tabs.forEach(function (x) {
+      x.classList.remove(`operations__tab--active`);
+    });
+    tab.classList.add(`operations__tab--active`);
+
+    contentElelemnts.forEach(function (el) {
+      el.classList.remove(`operations__content--active`);
+    });
+    document
+      .querySelector(`.operations__content--${tab.dataset.tab}`)
+      .classList.add(`operations__content--active`);
+  }
+});
+
+///////////////////////////////////////
+// Sections fading in
+
+const sections = document.querySelectorAll(`.section`);
+
+const obsFn = function (entries, observer) {
+  const entry = entries[0];
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove(`section--hidden`);
+  observer.unobserve(entry.target);
+};
+
+const obsOptions = {
+  root: null,
+  threshold: 0.1,
+};
+
+const sectionObserver = new IntersectionObserver(obsFn, obsOptions);
+
+sections.forEach(function (section) {
+  section.classList.add(`section--hidden`);
+  sectionObserver.observe(section);
+});
